@@ -1,0 +1,46 @@
+﻿@model CrudProdutoFornecedor.Models.Fornecedor
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@*
+    View Edit para Fornecedor
+    - Permite editar os dados de um fornecedor existente.
+    - O campo FornecedorId é enviado como hidden para identificar o registro
+      ao submeter o formulário.
+*@
+<h1>Edit</h1>
+
+<h4>Fornecedor</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @* Campo oculto com o id do fornecedor *@
+            <input type="hidden" asp-for="FornecedorId" />
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cidade" class="control-label"></label>
+                <input asp-for="Cidade" class="form-control" />
+                <span asp-validation-for="Cidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

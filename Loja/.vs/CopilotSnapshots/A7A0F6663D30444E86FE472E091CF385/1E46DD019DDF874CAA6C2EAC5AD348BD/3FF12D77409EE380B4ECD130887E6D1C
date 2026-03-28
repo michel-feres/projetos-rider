@@ -1,0 +1,12 @@
+﻿namespace CrudProdutoFornecedor.Models;
+
+public class Fornecedor
+{
+    public int FornecedorId { get; set; }
+
+    public string Nome { get; set; } = string.Empty;
+    public string Cidade { get; set; } = string.Empty;
+
+    // 1 fornecedor -> N produtos
+    public ICollection<Produto> Produtos { get; set; } = new List<Produto>();
+}

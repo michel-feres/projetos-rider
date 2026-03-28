@@ -1,0 +1,26 @@
+﻿using CrudProdutoFornecedor.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace CrudProdutoFornecedor.Data;
+
+public class ApplicationDbContext : DbContext
+{
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        : base(options)
+    {
+    }
+
+    public DbSet<Fornecedor> Fornecedores { get; set; }
+    public DbSet<Produto> Produtos { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Fornecedor>()
+            .HasMany(f => f.Produtos)
+            .WithOne(p => p.Fornecedor)
+            .HasForeignKey(p => p.FornecedorId)
+            .OnDelete(DeleteBehavior.Cascade);
+    }
+}

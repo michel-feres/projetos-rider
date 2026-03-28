@@ -1,0 +1,17 @@
+﻿namespace CrudProdutoFornecedor.Models;
+
+public class Produto
+{
+    public int ProdutoId { get; set; }
+
+    public string Nome { get; set; } = string.Empty;
+
+    // melhor usar decimal para dinheiro
+    public decimal Valor { get; set; }
+
+    // FK (obrigatória para 1-N bem definido)
+    public int FornecedorId { get; set; }
+
+    // navegação
+    public Fornecedor? Fornecedor { get; set; }
+}

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aluno\\Downloads\\Loja\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A3F59513-8281-EB91-E85B-BCE996524582}|Loja\\Loja.csproj|c:\\users\\aluno\\downloads\\loja\\loja\\wwwroot\\css\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A3F59513-8281-EB91-E85B-BCE996524582}|Loja\\Loja.csproj|solutionrelative:loja\\wwwroot\\css\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3F59513-8281-EB91-E85B-BCE996524582}|Loja\\Loja.csproj|c:\\users\\aluno\\downloads\\loja\\loja\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3F59513-8281-EB91-E85B-BCE996524582}|Loja\\Loja.csproj|solutionrelative:loja\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3F59513-8281-EB91-E85B-BCE996524582}|Loja\\Loja.csproj|c:\\users\\aluno\\downloads\\loja\\loja\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3F59513-8281-EB91-E85B-BCE996524582}|Loja\\Loja.csproj|solutionrelative:loja\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Downloads\\Loja\\Loja\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Loja\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Aluno\\Downloads\\Loja\\Loja\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Loja\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T11:40:12.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Downloads\\Loja\\Loja\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Loja\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Aluno\\Downloads\\Loja\\Loja\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Loja\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAABgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-25T11:32:04.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "estilo.css",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Downloads\\Loja\\Loja\\wwwroot\\css\\estilo.css",
+              "RelativeDocumentMoniker": "Loja\\wwwroot\\css\\estilo.css",
+              "ToolTip": "C:\\Users\\Aluno\\Downloads\\Loja\\Loja\\wwwroot\\css\\estilo.css",
+              "RelativeToolTip": "Loja\\wwwroot\\css\\estilo.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-25T11:26:32.198Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
