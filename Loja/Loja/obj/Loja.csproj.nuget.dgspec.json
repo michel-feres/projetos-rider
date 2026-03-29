@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/michel/Desktop/Loja/Loja/Loja.csproj": {}
+    "/home/michel/Desktop/projetos rider/Loja/Loja/Loja.csproj": {}
   },
   "projects": {
-    "/home/michel/Desktop/Loja/Loja/Loja.csproj": {
+    "/home/michel/Desktop/projetos rider/Loja/Loja/Loja.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/michel/Desktop/Loja/Loja/Loja.csproj",
+        "projectUniqueName": "/home/michel/Desktop/projetos rider/Loja/Loja/Loja.csproj",
         "projectName": "Loja",
-        "projectPath": "/home/michel/Desktop/Loja/Loja/Loja.csproj",
+        "projectPath": "/home/michel/Desktop/projetos rider/Loja/Loja/Loja.csproj",
         "packagesPath": "/home/michel/.nuget/packages/",
-        "outputPath": "/home/michel/Desktop/Loja/Loja/obj/",
+        "outputPath": "/home/michel/Desktop/projetos rider/Loja/Loja/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/michel/.nuget/NuGet/NuGet.Config"

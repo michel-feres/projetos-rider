@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using CrudProdutoFornecedor.Data;
-using CrudProdutoFornecedor.Models;
+using CrudFornecedorProduto.Data;
+using CrudFornecedorProduto.Models;
 
 namespace Loja.Controllers
 {

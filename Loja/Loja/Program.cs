@@ -1,4 +1,4 @@
-using CrudProdutoFornecedor.Data;
+using CrudFornecedorProduto.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;

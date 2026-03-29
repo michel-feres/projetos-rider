@@ -1,7 +1,7 @@
-﻿using CrudProdutoFornecedor.Models;
+﻿using CrudFornecedorProduto.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace CrudProdutoFornecedor.Data;
+namespace CrudFornecedorProduto.Data;
 
 /*
  * ApplicationDbContext

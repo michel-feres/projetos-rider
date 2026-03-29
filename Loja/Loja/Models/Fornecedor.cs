@@ -1,4 +1,4 @@
-﻿namespace CrudProdutoFornecedor.Models;
+﻿namespace CrudFornecedorProduto.Models;
 
 /*
  * Classe Fornecedor
