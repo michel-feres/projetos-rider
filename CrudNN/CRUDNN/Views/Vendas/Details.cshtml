@@ -1,0 +1,45 @@
+@model CRUDNN.Models.Venda
+@{
+    ViewData["Title"] = "Detalhes da Venda";
+}
+
+<h1>Venda #@Model.Id</h1>
+
+<dl class="row">
+    <dt class="col-sm-2">Cliente</dt>
+    <dd class="col-sm-10">@Model.Cliente?.Nome</dd>
+
+    <dt class="col-sm-2">Data</dt>
+    <dd class="col-sm-10">@Model.Data.ToString("dd/MM/yyyy HH:mm")</dd>
+
+    <dt class="col-sm-2">Total</dt>
+    <dd class="col-sm-10">@Model.Total.ToString("C")</dd>
+</dl>
+
+<h4>Itens</h4>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Produto</th>
+        <th class="text-end">Preço Unit.</th>
+        <th class="text-end">Qtd</th>
+        <th class="text-end">Subtotal</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var i in Model.Itens)
+    {
+        <tr>
+            <td>@i.Produto?.Nome</td>
+            <td class="text-end">@i.PrecoUnitario.ToString("C")</td>
+            <td class="text-end">@i.Quantidade</td>
+            <td class="text-end">@((i.PrecoUnitario * i.Quantidade).ToString("C"))</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</p>

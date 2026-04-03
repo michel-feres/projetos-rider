@@ -1,0 +1,57 @@
+@model CRUDNN.ViewModels.VendaFormVM
+@using CRUDNN.Models
+@{
+    ViewData["Title"] = "Editar Venda";
+    var clientes = (IEnumerable<Cliente>)ViewBag.Clientes;
+    var vendaId = (int)ViewBag.VendaId;
+}
+<h1>Editar Venda #@vendaId</h1>
+<form asp-action="Edit" method="post" asp-route-id="@vendaId">
+    <div class="mb-3">
+        <label class="form-label">Cliente</label>
+        <select asp-for="ClienteId" class="form-select" required>
+            <option value="">-- selecione --</option>
+            @foreach (var c in clientes)
+            {
+                <option value="@c.Id" selected="@(c.Id == Model.ClienteId)">
+                    @c.Nome
+                </option>
+            }
+        </select>
+        <span asp-validation-for="ClienteId" class="text-danger"></span>
+    </div>
+    <h4>Produtos</h4>
+    <p class="text-muted">Ajuste as quantidades (0 = remover)</p>
+    <table class="table table-bordered align-middle">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th class="text-end">Preço Atual</th>
+                <th class="text-end">Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Itens.Count; i++)
+            {
+                <tr>
+                    <td>
+                        @Model.Itens[i].ProdutoNome
+                        <input type="hidden" asp-for="Itens[@i].ProdutoId" />
+                        <input type="hidden" asp-for="Itens[@i].ProdutoNome" />
+                        <input type="hidden" asp-for="Itens[@i].PrecoAtual" />
+                    </td>
+                    <td class="text-end">@Model.Itens[i].PrecoAtual.ToString("C")</td>
+                    <td class="text-end" style="max-width:140px;">
+                        <input asp-for="Itens[@i].Quantidade" class="form-control text-end" min="0" />
+                        <span asp-validation-for="Itens[@i].Quantidade" class="text-danger"></span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary">Salvar alterações</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

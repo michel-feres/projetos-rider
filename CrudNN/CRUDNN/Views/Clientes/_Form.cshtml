@@ -1,0 +1,43 @@
+@model CRUDNN.Models.Cliente
+
+<div class="card p-3">
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+
+    <div class="row g-3">
+        <div class="col-12 col-md-6">
+            <label asp-for="Nome" class="form-label"></label>
+            <input asp-for="Nome" class="form-control" placeholder="Ex.: Maria Joana" />
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control" placeholder="email@dominio.com" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <label asp-for="Telefone" class="form-label"></label>
+            <input asp-for="Telefone" class="form-control" placeholder="(18) 99999-9999" data-mask="phone" inputmode="numeric" />
+            <span asp-validation-for="Telefone" class="text-danger"></span>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // máscara leve para telefone BR (sem libs)
+        function maskPhone(el) {
+            let v = el.value.replace(/\D/g, '').slice(0, 11);
+            if (v.length >= 1) v = '(' + v;
+            if (v.length >= 3) v = v.slice(0, 3) + ') ' + v.slice(3);
+            if (v.length >= 10) v = v.slice(0, 10) + '-' + v.slice(10);
+            el.value = v;
+        }
+        document.querySelectorAll('input[data-mask="phone"]').forEach(i => {
+            i.addEventListener('input', e => maskPhone(e.target));
+            maskPhone(i);
+        });
+    </script>
+}

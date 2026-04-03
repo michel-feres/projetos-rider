@@ -1,0 +1,26 @@
+@model CRUDNN.Models.Cliente
+@{
+    ViewData["Title"] = "Detalhes do Cliente";
+}
+<h1 class="mb-3">Detalhes do Cliente</h1>
+<div class="card p-3 mb-3">
+    <dl class="row mb-0">
+        <dt class="col-sm-3">Nome</dt>
+        <dd class="col-sm-9">@Model.Nome</dd>
+        <dt class="col-sm-3">E-mail</dt>
+        <dd class="col-sm-9">
+            @if (!string.IsNullOrWhiteSpace(Model.Email))
+            {
+                <a href="mailto:@Model.Email" class="link-light">@Model.Email</a>
+            }
+        </dd>
+        <dt class="col-sm-3">Telefone</dt>
+        <dd class="col-sm-9">@Model.Telefone</dd>
+    </dl>
+</div>
+<div class="d-flex gap-2">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+        <i class="bi bi-pencil"></i> Editar
+    </a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</div>

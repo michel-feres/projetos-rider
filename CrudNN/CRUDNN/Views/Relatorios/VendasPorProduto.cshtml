@@ -1,0 +1,94 @@
+@model CRUDNN.ViewModels.RelatorioVendasVM
+@{
+    var ini = Model.DataIni?.ToString("yyyy-MM-dd") ?? "";
+    var fim = Model.DataFim?.ToString("yyyy-MM-dd") ?? "";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="m-0">Vendas por Produto</h1>
+    <div class="d-flex gap-2">
+        <a class="btn btn-outline-light"
+           asp-action="VendasPorProdutoCsv"
+           asp-route-dataIni="@Model.DataIni?.ToString("yyyy-MM-dd")"
+           asp-route-dataFim="@Model.DataFim?.ToString("yyyy-MM-dd")">
+           <i class="bi bi-filetype-csv"></i> Exportar CSV
+        </a>
+    </div>
+</div>
+
+<form method="get" class="card p-3 mb-3">
+    <div class="row g-3 align-items-end">
+        <div class="col-12 col-md-3">
+            <label class="form-label">Data inicial</label>
+            <input type="date" name="dataIni" value="@ini" class="form-control" />
+        </div>
+        <div class="col-12 col-md-3">
+            <label class="form-label">Data final</label>
+            <input type="date" name="dataFim" value="@fim" class="form-control" />
+        </div>
+        <div class="col-12 col-md-6 d-flex gap-2">
+            <button class="btn btn-primary" type="submit">
+                <i class="bi bi-funnel"></i> Filtrar
+            </button>
+            <a asp-action="VendasPorProduto" class="btn btn-secondary">
+                Limpar
+            </a>
+            <a asp-action="VendasPorProduto"
+               asp-route-dataIni="@(DateTime.Today.ToString("yyyy-MM-dd"))"
+               asp-route-dataFim="@(DateTime.Today.ToString("yyyy-MM-dd"))"
+               class="btn btn-outline-light">
+                Hoje
+            </a>
+            <a asp-action="VendasPorProduto"
+               asp-route-dataIni="@(DateTime.Today.AddDays(-6).ToString("yyyy-MM-dd"))"
+               asp-route-dataFim="@(DateTime.Today.ToString("yyyy-MM-dd"))"
+               class="btn btn-outline-light">
+                Últimos 7 dias
+            </a>
+            <a asp-action="VendasPorProduto"
+               asp-route-dataIni="@(new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1).ToString("yyyy-MM-dd"))"
+               asp-route-dataFim="@(new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month)).ToString("yyyy-MM-dd"))"
+               class="btn btn-outline-light">
+                Mês atual
+            </a>
+        </div>
+    </div>
+</form>
+
+<div class="d-flex justify-content-between align-items-center mb-2">
+    <div class="text-muted">Período: <strong>@Model.PeriodoFmt</strong></div>
+    <div class="text-muted">
+        Itens: <strong>@Model.TotalItens</strong> —
+        Receita: <strong>@Model.ReceitaTotal.ToString("C")</strong>
+    </div>
+</div>
+
+<div class="card p-0">
+    <div class="table-responsive">
+        <table class="table align-middle mb-0">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th class="text-end">Quantidade</th>
+                    <th class="text-end">Receita</th>
+                    <th class="text-end">Ticket Médio</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var l in Model.Linhas)
+            {
+                <tr>
+                    <td>@l.Produto</td>
+                    <td class="text-end">@l.Quantidade</td>
+                    <td class="text-end">@l.Receita.ToString("C")</td>
+                    <td class="text-end">@l.TicketMedio.ToString("C")</td>
+                </tr>
+            }
+            @if (!Model.Linhas.Any())
+            {
+                <tr><td colspan="4" class="text-center text-muted py-4">Nenhuma venda no período.</td></tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

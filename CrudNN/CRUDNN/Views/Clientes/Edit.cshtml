@@ -1,0 +1,18 @@
+@model CRUDNN.Models.Cliente
+@{
+    ViewData["Title"] = "Editar Cliente";
+}
+
+@await Html.PartialAsync("_Alerts")
+
+<h1 class="mb-3">Editar Cliente</h1>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <partial name="_Form" />
+    <div class="mt-3 d-flex gap-2">
+        <button type="submit" class="btn btn-primary">
+            <i class="bi bi-check2"></i> Salvar alterações
+        </button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </div>
+</form>

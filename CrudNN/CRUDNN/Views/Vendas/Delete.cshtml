@@ -1,0 +1,53 @@
+@model CRUDNN.Models.Venda
+
+@{
+    ViewData["Title"] = "Excluir Venda";
+}
+
+<h1>Excluir Venda</h1>
+
+<h3>Você tem certeza que deseja excluir esta venda?</h3>
+
+<div>
+    <h4>Venda #@Model.Id</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Cliente</dt>
+        <dd class="col-sm-10">@Model.Cliente?.Nome</dd>
+
+        <dt class="col-sm-2">Data</dt>
+        <dd class="col-sm-10">@Model.Data.ToString("dd/MM/yyyy HH:mm")</dd>
+
+        <dt class="col-sm-2">Total</dt>
+        <dd class="col-sm-10">@Model.Total.ToString("C")</dd>
+    </dl>
+
+    <h4>Itens da Venda</h4>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Produto</th>
+            <th class="text-end">Preço Unit.</th>
+            <th class="text-end">Qtd</th>
+            <th class="text-end">Subtotal</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.Itens)
+        {
+            <tr>
+                <td>@item.Produto?.Nome</td>
+                <td class="text-end">@item.PrecoUnitario.ToString("C")</td>
+                <td class="text-end">@item.Quantidade</td>
+                <td class="text-end">@((item.PrecoUnitario * item.Quantidade).ToString("C"))</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Excluir</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
