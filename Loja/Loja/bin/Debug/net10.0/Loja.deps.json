@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "Loja/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
         },

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bSUOFdpyGp4=",
+  "dgSpecHash": "yfO+qUn5Ibs=",
   "success": true,
-  "projectFilePath": "/home/michel/projetos-rider/Loja/Loja/Loja.csproj",
+  "projectFilePath": "/home/michel/Documents/projetos-rider/Loja/Loja/Loja.csproj",
   "expectedPackageFiles": [
     "/home/michel/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/michel/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -34,9 +34,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'Npgsql' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c",
-      "projectPath": "/home/michel/projetos-rider/Loja/Loja/Loja.csproj",
+      "projectPath": "/home/michel/Documents/projetos-rider/Loja/Loja/Loja.csproj",
       "warningLevel": 1,
-      "filePath": "/home/michel/projetos-rider/Loja/Loja/Loja.csproj",
+      "filePath": "/home/michel/Documents/projetos-rider/Loja/Loja/Loja.csproj",
       "libraryId": "Npgsql",
       "targetGraphs": [
         "net10.0"

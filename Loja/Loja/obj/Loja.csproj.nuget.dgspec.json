@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/michel/projetos-rider/Loja/Loja/Loja.csproj": {}
+    "/home/michel/Documents/projetos-rider/Loja/Loja/Loja.csproj": {}
   },
   "projects": {
-    "/home/michel/projetos-rider/Loja/Loja/Loja.csproj": {
+    "/home/michel/Documents/projetos-rider/Loja/Loja/Loja.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/michel/projetos-rider/Loja/Loja/Loja.csproj",
+        "projectUniqueName": "/home/michel/Documents/projetos-rider/Loja/Loja/Loja.csproj",
         "projectName": "Loja",
-        "projectPath": "/home/michel/projetos-rider/Loja/Loja/Loja.csproj",
+        "projectPath": "/home/michel/Documents/projetos-rider/Loja/Loja/Loja.csproj",
         "packagesPath": "/home/michel/.nuget/packages/",
-        "outputPath": "/home/michel/projetos-rider/Loja/Loja/obj/",
+        "outputPath": "/home/michel/Documents/projetos-rider/Loja/Loja/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/michel/.nuget/NuGet/NuGet.Config"
@@ -44,6 +44,10 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

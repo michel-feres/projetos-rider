@@ -11,81 +11,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Loja
 build_property.RootNamespace = Loja
-build_property.ProjectDir = /home/michel/projetos-rider/Loja/Loja/
+build_property.ProjectDir = /home/michel/Documents/projetos-rider/Loja/Loja/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/michel/projetos-rider/Loja/Loja
+build_property.MSBuildProjectDirectory = /home/michel/Documents/projetos-rider/Loja/Loja
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Fornecedors/Create.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Fornecedors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9ybmVjZWRvcnMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Fornecedors/Delete.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Fornecedors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9ybmVjZWRvcnMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Fornecedors/Details.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Fornecedors/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9ybmVjZWRvcnMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Fornecedors/Edit.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Fornecedors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9ybmVjZWRvcnMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Fornecedors/Index.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Fornecedors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9ybmVjZWRvcnMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Home/Index.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Home/Privacy.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Produtoes/Create.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Produtoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b2VzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Produtoes/Delete.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Produtoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b2VzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Produtoes/Details.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Produtoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b2VzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Produtoes/Edit.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Produtoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b2VzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Produtoes/Index.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Produtoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b2VzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Shared/Error.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/_ViewImports.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/_ViewStart.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/Loja/Loja/Views/Shared/_Layout.cshtml]
+[/home/michel/Documents/projetos-rider/Loja/Loja/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-o5f36igzm7
