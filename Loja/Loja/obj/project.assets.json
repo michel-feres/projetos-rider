@@ -1354,11 +1354,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/michel/Documents/projetos-rider/Loja/Loja/Loja.csproj",
+      "projectUniqueName": "/home/michel/docs/projetos-rider/Loja/Loja/Loja.csproj",
       "projectName": "Loja",
-      "projectPath": "/home/michel/Documents/projetos-rider/Loja/Loja/Loja.csproj",
+      "projectPath": "/home/michel/docs/projetos-rider/Loja/Loja/Loja.csproj",
       "packagesPath": "/home/michel/.nuget/packages/",
-      "outputPath": "/home/michel/Documents/projetos-rider/Loja/Loja/obj/",
+      "outputPath": "/home/michel/docs/projetos-rider/Loja/Loja/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/michel/.nuget/NuGet/NuGet.Config"

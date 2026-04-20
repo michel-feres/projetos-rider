@@ -1,47 +1,95 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Carros
 build_property.RootNamespace = Carros
-build_property.ProjectDir = /home/michel/Documents/projetos-rider/Carros/Carros/
+build_property.ProjectDir = /home/michel/docs/projetos-rider/Carros/Carros/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/michel/Documents/projetos-rider/Carros/Carros
+build_property.MSBuildProjectDirectory = /home/michel/docs/projetos-rider/Carros/Carros
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/michel/Documents/projetos-rider/Carros/Carros/Views/Home/Index.cshtml]
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Carro/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2Fycm8vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Carro/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2Fycm8vRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Carro/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2Fycm8vRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Carro/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2Fycm8vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Carro/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2Fycm8vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Fabricante/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmFicmljYW50ZS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Fabricante/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmFicmljYW50ZS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Fabricante/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmFicmljYW50ZS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Fabricante/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmFicmljYW50ZS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Fabricante/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmFicmljYW50ZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/Documents/projetos-rider/Carros/Carros/Views/Home/Privacy.cshtml]
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/Documents/projetos-rider/Carros/Carros/Views/Shared/Error.cshtml]
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/Documents/projetos-rider/Carros/Carros/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/Documents/projetos-rider/Carros/Carros/Views/_ViewImports.cshtml]
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/Documents/projetos-rider/Carros/Carros/Views/_ViewStart.cshtml]
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/Documents/projetos-rider/Carros/Carros/Views/Shared/_Layout.cshtml]
+[/home/michel/docs/projetos-rider/Carros/Carros/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9nor6853dd

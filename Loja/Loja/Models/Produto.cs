@@ -1,17 +1,5 @@
 ﻿namespace CrudFornecedorProduto.Models;
 
-/*
- * Classe Produto
- * Representa um produto do sistema com propriedades essenciais:
- * - ProdutoId: chave primária (identificador do produto)
- * - Nome: nome do produto
- * - Valor: preço/valor do produto (usar decimal para valores monetários)
- * - FornecedorId: chave estrangeira para o fornecedor (inteiro)
- * - Fornecedor: propriedade de navegação para carregar o fornecedor relacionado
- *
- * Comentário: usamos decimal para o Valor porque é o tipo recomendado
- * para valores monetários (precisão, evitar imprecisão de ponto flutuante).
- */
 public class Produto
 {
     // Identificador único do produto (PK)
