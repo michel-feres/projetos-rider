@@ -2,11 +2,18 @@
 @{
     ViewData["Title"] = "Vendas";
 }
+
+<style>
+    .tabela-vendas td {
+        color: #fff;
+    }
+</style>
+
 <h1>Vendas</h1>
 <p>
     <a asp-action="Create" class="btn btn-primary">Nova Venda</a>
 </p>
-<table class="table table-striped">
+<table class="table table-striped tabela-vendas">
     <thead>
     <tr>
         <th>Id</th>

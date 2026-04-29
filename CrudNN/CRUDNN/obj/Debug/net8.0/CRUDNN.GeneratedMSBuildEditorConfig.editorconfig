@@ -17,111 +17,111 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CrudNN
 build_property.RootNamespace = CrudNN
-build_property.ProjectDir = /home/michel/projetos-rider/CrudNN/CRUDNN/
+build_property.ProjectDir = /home/michel/docs/projetos-rider/CrudNN/CRUDNN/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/michel/projetos-rider/CrudNN/CRUDNN
+build_property.MSBuildProjectDirectory = /home/michel/docs/projetos-rider/CrudNN/CRUDNN
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Clientes/Create.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Clientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Clientes/Delete.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Clientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Clientes/Details.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Clientes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Clientes/Edit.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Clientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Clientes/Index.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Clientes/_Form.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Clientes/_Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvX0Zvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Home/Index.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Home/Privacy.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Produtos/Create.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Produtos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Produtos/Delete.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Produtos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Produtos/Details.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Produtos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Produtos/Edit.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Produtos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Produtos/Index.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Produtos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHV0b3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Relatorios/VendasPorProduto.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Relatorios/VendasPorProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVsYXRvcmlvcy9WZW5kYXNQb3JQcm9kdXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Shared/Error.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Shared/_Alerts.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Shared/_Alerts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BbGVydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Vendas/Create.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Vendas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVuZGFzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Vendas/Delete.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Vendas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVuZGFzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Vendas/Details.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Vendas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVuZGFzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Vendas/Edit.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Vendas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVuZGFzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Vendas/Index.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Vendas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVuZGFzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/_ViewImports.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/_ViewStart.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/michel/projetos-rider/CrudNN/CRUDNN/Views/Shared/_Layout.cshtml]
+[/home/michel/docs/projetos-rider/CrudNN/CRUDNN/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jstauqch0a

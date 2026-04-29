@@ -128,7 +128,6 @@
 /home/michel/docs/projetos-rider/Carros/Carros/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /home/michel/docs/projetos-rider/Carros/Carros/obj/Debug/net8.0/scopedcss/bundle/Carros.styles.css
 /home/michel/docs/projetos-rider/Carros/Carros/obj/Debug/net8.0/scopedcss/projectbundle/Carros.bundle.scp.css
-/home/michel/docs/projetos-rider/Carros/Carros/obj/Debug/net8.0/Carros.csproj.Up2Date
 /home/michel/docs/projetos-rider/Carros/Carros/obj/Debug/net8.0/Carros.dll
 /home/michel/docs/projetos-rider/Carros/Carros/obj/Debug/net8.0/refint/Carros.dll
 /home/michel/docs/projetos-rider/Carros/Carros/obj/Debug/net8.0/Carros.pdb
@@ -308,3 +307,4 @@
 /home/michel/docs/projetos-rider/Carros/Carros/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/michel/docs/projetos-rider/Carros/Carros/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
 /home/michel/docs/projetos-rider/Carros/Carros/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+/home/michel/docs/projetos-rider/Carros/Carros/obj/Debug/net8.0/Carros.csproj.CopyComplete

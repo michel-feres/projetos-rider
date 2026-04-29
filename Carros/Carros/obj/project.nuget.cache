@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "F4TCT5s9Gpc=",
+  "dgSpecHash": "H3QTvF5SmnA=",
   "success": true,
   "projectFilePath": "/home/michel/docs/projetos-rider/Carros/Carros/Carros.csproj",
   "expectedPackageFiles": [
@@ -165,7 +165,8 @@
     "/home/michel/.nuget/packages/system.text.encodings.web/6.0.1/system.text.encodings.web.6.0.1.nupkg.sha512",
     "/home/michel/.nuget/packages/system.text.json/8.0.6/system.text.json.8.0.6.nupkg.sha512",
     "/home/michel/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
-    "/home/michel/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "/home/michel/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "/home/michel/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.25/microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
   ],
   "logs": []
 }

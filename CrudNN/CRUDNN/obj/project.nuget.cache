@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iu2Wv6iEOQ0=",
+  "dgSpecHash": "JGEcI3KrVIs=",
   "success": true,
-  "projectFilePath": "/home/michel/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj",
+  "projectFilePath": "/home/michel/docs/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj",
   "expectedPackageFiles": [
     "/home/michel/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/michel/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

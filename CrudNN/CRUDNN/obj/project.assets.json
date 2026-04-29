@@ -8137,11 +8137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/michel/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj",
+      "projectUniqueName": "/home/michel/docs/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj",
       "projectName": "CrudNN",
-      "projectPath": "/home/michel/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj",
+      "projectPath": "/home/michel/docs/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj",
       "packagesPath": "/home/michel/.nuget/packages/",
-      "outputPath": "/home/michel/projetos-rider/CrudNN/CRUDNN/obj/",
+      "outputPath": "/home/michel/docs/projetos-rider/CrudNN/CRUDNN/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/michel/.nuget/NuGet/NuGet.Config"
