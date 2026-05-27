@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/michel/docs/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj": {}
+    "/home/michel/Desktop/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj": {}
   },
   "projects": {
-    "/home/michel/docs/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj": {
+    "/home/michel/Desktop/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/michel/docs/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj",
+        "projectUniqueName": "/home/michel/Desktop/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj",
         "projectName": "CrudNN",
-        "projectPath": "/home/michel/docs/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj",
+        "projectPath": "/home/michel/Desktop/projetos-rider/CrudNN/CRUDNN/CRUDNN.csproj",
         "packagesPath": "/home/michel/.nuget/packages/",
-        "outputPath": "/home/michel/docs/projetos-rider/CrudNN/CRUDNN/obj/",
+        "outputPath": "/home/michel/Desktop/projetos-rider/CrudNN/CRUDNN/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/michel/.nuget/NuGet/NuGet.Config"
@@ -91,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/michel/.dotnet/sdk/8.0.420/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/michel/.dotnet/sdk/8.0.421/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
