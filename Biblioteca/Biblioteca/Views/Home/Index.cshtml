@@ -1,8 +1,43 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Menu principal";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="p-5 mb-4 bg-light rounded-3 shadow-sm">
+    <div class="container-fluid py-3">
+        <h1 class="display-5 fw-bold">Sistema de Biblioteca</h1>
+        <p class="col-md-9 fs-5">
+            Projeto ASP.NET Core MVC com PostgreSQL para gerenciar usuários, livros, empréstimos e devoluções.
+        </p>
+        <a class="btn btn-primary btn-lg" asp-controller="Usuarios" asp-action="Index">Gerenciar usuários</a>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h2 class="h5">Usuários</h2>
+                <p class="text-muted">CRUD completo e login simples para liberar empréstimos.</p>
+                <a class="btn btn-outline-primary" asp-controller="Usuarios" asp-action="Create">Cadastrar usuário</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm opacity-75">
+            <div class="card-body">
+                <h2 class="h5">Livros</h2>
+                <p class="text-muted">Próxima etapa: cadastro, listagem, busca e controle de estoque.</p>
+                <button class="btn btn-outline-secondary" disabled>Em breve</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm opacity-75">
+            <div class="card-body">
+                <h2 class="h5">Empréstimos</h2>
+                <p class="text-muted">Próxima etapa: empréstimo, devolução, atraso e multa.</p>
+                <button class="btn btn-outline-secondary" disabled>Em breve</button>
+            </div>
+        </div>
+    </div>
 </div>

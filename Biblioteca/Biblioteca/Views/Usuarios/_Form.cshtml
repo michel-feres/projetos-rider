@@ -1,0 +1,44 @@
+@model Biblioteca.Models.Usuario
+
+<form asp-action="@(Model.Id == 0 ? "Create" : "Edit")" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+    @if (Model.Id != 0)
+    {
+        <input type="hidden" asp-for="Id" />
+    }
+
+    <div class="mb-3">
+        <label asp-for="NomeCompleto" class="form-label"></label>
+        <input asp-for="NomeCompleto" class="form-control" placeholder="Ex.: Maria Silva Santos" />
+        <span asp-validation-for="NomeCompleto" class="text-danger"></span>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label asp-for="DataNascimento" class="form-label"></label>
+            <input asp-for="DataNascimento" class="form-control" />
+            <span asp-validation-for="DataNascimento" class="text-danger"></span>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control" placeholder="usuario@email.com" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Senha" class="form-label"></label>
+        <input asp-for="Senha" class="form-control" />
+        <span asp-validation-for="Senha" class="text-danger"></span>
+    </div>
+
+    <div class="form-check form-switch mb-4">
+        <input asp-for="Ativo" class="form-check-input" role="switch" />
+        <label asp-for="Ativo" class="form-check-label"></label>
+    </div>
+
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a class="btn btn-outline-secondary" asp-action="Index">Voltar</a>
+    </div>
+</form>
