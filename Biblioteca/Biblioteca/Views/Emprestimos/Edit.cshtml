@@ -1,0 +1,21 @@
+@model Biblioteca.Models.Emprestimo
+
+@{
+    ViewData["Title"] = "Editar empréstimo";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+                <h1 class="h3 mb-3">Editar empréstimo</h1>
+                <p class="text-muted">Atualize as datas do empréstimo.</p>
+                <partial name="_Form" model="Model" />
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

@@ -1,0 +1,72 @@
+@model Biblioteca.Models.Livro
+
+<form asp-action="@(Model.Id == 0 ? "Create" : "Edit")" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+    @if (Model.Id != 0)
+    {
+        <input type="hidden" asp-for="Id" />
+    }
+
+    <div class="mb-3">
+        <label asp-for="Titulo" class="form-label"></label>
+        <input asp-for="Titulo" class="form-control" placeholder="Ex.: Dom Casmurro" />
+        <span asp-validation-for="Titulo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Autor" class="form-label"></label>
+        <input asp-for="Autor" class="form-control" placeholder="Ex.: Machado de Assis" />
+        <span asp-validation-for="Autor" class="text-danger"></span>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label asp-for="Isbn" class="form-label"></label>
+            <input asp-for="Isbn" class="form-control" placeholder="Ex.: 9788535910663" />
+            <span asp-validation-for="Isbn" class="text-danger"></span>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="AnoPublicacao" class="form-label"></label>
+            <input asp-for="AnoPublicacao" class="form-control" />
+            <span asp-validation-for="AnoPublicacao" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label asp-for="Categoria" class="form-label"></label>
+            <input asp-for="Categoria" class="form-control" placeholder="Ex.: Romance" />
+            <span asp-validation-for="Categoria" class="text-danger"></span>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="FaixaEtariaPermitida" class="form-label"></label>
+            <select asp-for="FaixaEtariaPermitida" class="form-select">
+                <option value="0">Livre</option>
+                <option value="10">10+</option>
+                <option value="12">12+</option>
+                <option value="14">14+</option>
+                <option value="16">16+</option>
+                <option value="18">18+</option>
+            </select>
+            <span asp-validation-for="FaixaEtariaPermitida" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label asp-for="QuantidadeTotal" class="form-label"></label>
+            <input asp-for="QuantidadeTotal" class="form-control" />
+            <span asp-validation-for="QuantidadeTotal" class="text-danger"></span>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="QuantidadeDisponivel" class="form-label"></label>
+            <input asp-for="QuantidadeDisponivel" class="form-control" />
+            <span asp-validation-for="QuantidadeDisponivel" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a class="btn btn-outline-secondary" asp-action="Index">Voltar</a>
+    </div>
+</form>

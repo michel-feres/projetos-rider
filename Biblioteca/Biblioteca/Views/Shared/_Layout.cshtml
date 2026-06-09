@@ -23,20 +23,27 @@
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Menu principal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuários</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark disabled" aria-disabled="true">Livros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark disabled" aria-disabled="true">Empréstimos</a>
-                    </li>
+                    @if (!string.IsNullOrWhiteSpace(usuarioNome))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Menu principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuários</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Livros" asp-action="Index">Livros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Emprestimos" asp-action="Index">Empréstimos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Relatorios" asp-action="Index">Relatórios</a>
+                        </li>
+                    }
                 </ul>
                 <div class="d-flex align-items-center gap-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" id="themeToggle">Tema</button>
                     @if (!string.IsNullOrWhiteSpace(usuarioNome))
                     {
                         <span class="navbar-text small text-muted">Olá, @usuarioNome</span>
@@ -55,7 +62,7 @@
 </header>
 <div class="container">
     <main role="main" class="pb-3">
-        @if (TempData["MensagemSucesso"] is not null && ViewContext.RouteData.Values["controller"]?.ToString() != "Usuarios")
+        @if (TempData["MensagemSucesso"] is not null && ViewContext.RouteData.Values["controller"]?.ToString() == "Home")
         {
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 @TempData["MensagemSucesso"]

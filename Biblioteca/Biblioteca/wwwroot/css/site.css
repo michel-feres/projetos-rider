@@ -19,4 +19,51 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: #f6f8fb;
+  color: #1f2937;
+}
+
+.dashboard-card {
+  border-left: 4px solid #0d6efd;
+}
+
+[data-theme="escuro"] body {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+[data-theme="escuro"] .navbar,
+[data-theme="escuro"] .card,
+[data-theme="escuro"] .bg-light,
+[data-theme="escuro"] footer {
+  background-color: #1f2937 !important;
+  color: #e5e7eb !important;
+  border-color: #374151 !important;
+}
+
+[data-theme="escuro"] .nav-link,
+[data-theme="escuro"] .navbar-brand,
+[data-theme="escuro"] .navbar-text,
+[data-theme="escuro"] .text-dark {
+  color: #e5e7eb !important;
+}
+
+[data-theme="escuro"] .text-muted {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="escuro"] .table {
+  color: #e5e7eb;
+}
+
+[data-theme="escuro"] .form-control,
+[data-theme="escuro"] .form-select {
+  background-color: #111827;
+  border-color: #4b5563;
+  color: #e5e7eb;
+}
+
+[data-theme="escuro"] .btn-outline-secondary {
+  color: #e5e7eb;
+  border-color: #9ca3af;
 }

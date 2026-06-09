@@ -1,0 +1,123 @@
+@using Biblioteca.Models
+
+@{
+    ViewData["Title"] = "Relatórios";
+    var livrosPorCategoria = ViewBag.LivrosPorCategoria as IEnumerable<KeyValuePair<string, int>> ?? Enumerable.Empty<KeyValuePair<string, int>>();
+    var emprestimosRecentes = ViewBag.EmprestimosRecentes as IEnumerable<Emprestimo> ?? Enumerable.Empty<Emprestimo>();
+}
+
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+    <div>
+        <h1 class="mb-1">Relatórios</h1>
+        <p class="text-muted mb-0">Resumo operacional da biblioteca.</p>
+    </div>
+    <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Index">Menu principal</a>
+</div>
+
+<div class="row g-3 mb-4">
+    <div class="col-sm-6 col-lg-3">
+        <div class="card dashboard-card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="text-muted small">Usuários</div>
+                <div class="fs-3 fw-semibold">@ViewBag.TotalUsuarios</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="card dashboard-card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="text-muted small">Livros cadastrados</div>
+                <div class="fs-3 fw-semibold">@ViewBag.TotalLivros</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="card dashboard-card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="text-muted small">Exemplares disponíveis</div>
+                <div class="fs-3 fw-semibold">@ViewBag.TotalDisponiveis/@ViewBag.TotalExemplares</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="card dashboard-card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="text-muted small">Multas registradas</div>
+                <div class="fs-3 fw-semibold">@(((decimal)ViewBag.TotalMultasRecebidas).ToString("C"))</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-5">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h2 class="h5 mb-3">Livros por categoria</h2>
+                @if (livrosPorCategoria.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-sm align-middle">
+                            <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th class="text-end">Quantidade</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var item in livrosPorCategoria)
+                            {
+                                <tr>
+                                    <td>@item.Key</td>
+                                    <td class="text-end">@item.Value</td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="text-muted">Nenhum livro cadastrado.</div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h2 class="h5 mb-3">Empréstimos recentes</h2>
+                <div class="table-responsive">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                        <tr>
+                            <th>Usuário</th>
+                            <th>Livro</th>
+                            <th>Data</th>
+                            <th>Status</th>
+                            <th class="text-end">Multa</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var emprestimo in emprestimosRecentes)
+                        {
+                            <tr>
+                                <td>@emprestimo.Usuario?.NomeCompleto</td>
+                                <td>@emprestimo.Livro?.Titulo</td>
+                                <td>@emprestimo.DataEmprestimo.ToString("dd/MM/yyyy")</td>
+                                <td>@emprestimo.Status</td>
+                                <td class="text-end">@emprestimo.MultaAtual.ToString("C")</td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+
+                @if (!emprestimosRecentes.Any())
+                {
+                    <div class="text-muted">Nenhum empréstimo registrado.</div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

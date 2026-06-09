@@ -1,0 +1,143 @@
+@model IEnumerable<Biblioteca.Models.Livro>
+
+@{
+    ViewData["Title"] = ViewBag.TituloPagina ?? "Livros";
+    var categorias = ViewBag.Categorias as IEnumerable<string> ?? Enumerable.Empty<string>();
+    var pagina = ViewBag.Pagina as int? ?? 1;
+    var totalPaginas = ViewBag.TotalPaginas as int? ?? 1;
+    var somenteDisponiveis = ViewBag.SomenteDisponiveis as bool? ?? false;
+    var actionName = ViewBag.ActionName as string ?? "Index";
+}
+
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+    <div>
+        <h1 class="mb-1">@ViewData["Title"]</h1>
+        <p class="text-muted mb-0">Cadastre, busque, liste e acompanhe o estoque dos livros.</p>
+    </div>
+    <a class="btn btn-primary" asp-action="Create">Novo livro</a>
+</div>
+
+@if (TempData["MensagemSucesso"] is not null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["MensagemSucesso"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+    </div>
+}
+
+@if (TempData["MensagemErro"] is not null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["MensagemErro"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+    </div>
+}
+
+<form method="get" class="card shadow-sm mb-3">
+    <div class="card-body">
+        <div class="row g-3 align-items-end">
+            <div class="col-md-5">
+                <label class="form-label" for="busca">Buscar</label>
+                <input id="busca" name="busca" value="@ViewBag.Busca" class="form-control" placeholder="Título, autor ou ISBN" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label" for="categoria">Categoria</label>
+                <select id="categoria" name="categoria" class="form-select">
+                    <option value="">Todas</option>
+                    @foreach (var item in categorias)
+                    {
+                        if (ViewBag.Categoria == item)
+                        {
+                            <option value="@item" selected>@item</option>
+                        }
+                        else
+                        {
+                            <option value="@item">@item</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check form-switch mb-2">
+                    @if (somenteDisponiveis)
+                    {
+                        <input class="form-check-input" type="checkbox" role="switch" id="somenteDisponiveis" name="somenteDisponiveis" value="true" checked />
+                    }
+                    else
+                    {
+                        <input class="form-check-input" type="checkbox" role="switch" id="somenteDisponiveis" name="somenteDisponiveis" value="true" />
+                    }
+                    <label class="form-check-label" for="somenteDisponiveis">Disponíveis</label>
+                </div>
+            </div>
+            <div class="col-md-2 d-flex gap-2">
+                <button type="submit" class="btn btn-primary w-100">Filtrar</button>
+                <a class="btn btn-outline-secondary" asp-action="Index">Limpar</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="card shadow-sm">
+    <div class="card-body table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Titulo)</th>
+                <th>@Html.DisplayNameFor(model => model.Autor)</th>
+                <th>@Html.DisplayNameFor(model => model.Isbn)</th>
+                <th>@Html.DisplayNameFor(model => model.Categoria)</th>
+                <th>@Html.DisplayNameFor(model => model.FaixaEtariaPermitida)</th>
+                <th>@Html.DisplayNameFor(model => model.AnoPublicacao)</th>
+                <th>Estoque</th>
+                <th>@Html.DisplayNameFor(model => model.Disponibilidade)</th>
+                <th class="text-end">Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var livro in Model)
+            {
+                <tr>
+                    <td>@livro.Titulo</td>
+                    <td>@livro.Autor</td>
+                    <td>@(livro.Isbn ?? "-")</td>
+                    <td>@livro.Categoria</td>
+                    <td>@(livro.FaixaEtariaPermitida == 0 ? "Livre" : $"{livro.FaixaEtariaPermitida}+")</td>
+                    <td>@livro.AnoPublicacao</td>
+                    <td>@livro.QuantidadeDisponivel/@livro.QuantidadeTotal</td>
+                    <td>
+                        <span class="badge @(livro.QuantidadeDisponivel > 0 ? "text-bg-success" : "text-bg-secondary")">@livro.Disponibilidade</span>
+                    </td>
+                    <td class="text-end">
+                        <div class="btn-group" role="group" aria-label="Ações do livro">
+                            <a class="btn btn-sm btn-outline-primary" asp-action="Edit" asp-route-id="@livro.Id">Editar</a>
+                            <a class="btn btn-sm btn-outline-danger" asp-action="Delete" asp-route-id="@livro.Id">Excluir</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+
+        @if (!Model.Any())
+        {
+            <div class="text-center text-muted py-4">
+                Nenhum livro cadastrado ainda.
+            </div>
+        }
+    </div>
+</div>
+
+@if (totalPaginas > 1)
+{
+    <nav class="mt-3" aria-label="Paginação de livros">
+        <ul class="pagination justify-content-end">
+            @for (var item = 1; item <= totalPaginas; item++)
+            {
+                <li class="page-item @(item == pagina ? "active" : "")">
+                    <a class="page-link" asp-action="@actionName" asp-route-busca="@ViewBag.Busca" asp-route-categoria="@ViewBag.Categoria" asp-route-somenteDisponiveis="@somenteDisponiveis" asp-route-pagina="@item">@item</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}

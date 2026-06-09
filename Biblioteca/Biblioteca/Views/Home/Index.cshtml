@@ -8,7 +8,54 @@
         <p class="col-md-9 fs-5">
             Projeto ASP.NET Core MVC com PostgreSQL para gerenciar usuários, livros, empréstimos e devoluções.
         </p>
-        <a class="btn btn-primary btn-lg" asp-controller="Usuarios" asp-action="Index">Gerenciar usuários</a>
+        <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary btn-lg" asp-controller="Usuarios" asp-action="Index">Gerenciar usuários</a>
+            <a class="btn btn-outline-primary btn-lg" asp-controller="Livros" asp-action="Index">Gerenciar livros</a>
+            <a class="btn btn-outline-primary btn-lg" asp-controller="Emprestimos" asp-action="Index">Gerenciar empréstimos</a>
+        </div>
+    </div>
+</div>
+
+<div class="row g-3 mb-4">
+    <div class="col-sm-6 col-lg">
+        <div class="card dashboard-card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="text-muted small">Usuários</div>
+                <div class="fs-3 fw-semibold">@ViewBag.TotalUsuarios</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg">
+        <div class="card dashboard-card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="text-muted small">Livros</div>
+                <div class="fs-3 fw-semibold">@ViewBag.TotalLivros</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg">
+        <div class="card dashboard-card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="text-muted small">Disponíveis</div>
+                <div class="fs-3 fw-semibold">@ViewBag.LivrosDisponiveis</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg">
+        <div class="card dashboard-card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="text-muted small">Empréstimos ativos</div>
+                <div class="fs-3 fw-semibold">@ViewBag.EmprestimosAtivos</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg">
+        <div class="card dashboard-card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="text-muted small">Atrasados</div>
+                <div class="fs-3 fw-semibold">@ViewBag.EmprestimosAtrasados</div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -23,21 +70,27 @@
         </div>
     </div>
     <div class="col-md-4">
-        <div class="card h-100 shadow-sm opacity-75">
+        <div class="card h-100 shadow-sm">
             <div class="card-body">
                 <h2 class="h5">Livros</h2>
-                <p class="text-muted">Próxima etapa: cadastro, listagem, busca e controle de estoque.</p>
-                <button class="btn btn-outline-secondary" disabled>Em breve</button>
+                <p class="text-muted">Cadastro, listagem, edição, exclusão e controle de estoque.</p>
+                <a class="btn btn-outline-primary" asp-controller="Livros" asp-action="Create">Cadastrar livro</a>
             </div>
         </div>
     </div>
     <div class="col-md-4">
-        <div class="card h-100 shadow-sm opacity-75">
+        <div class="card h-100 shadow-sm">
             <div class="card-body">
                 <h2 class="h5">Empréstimos</h2>
-                <p class="text-muted">Próxima etapa: empréstimo, devolução, atraso e multa.</p>
-                <button class="btn btn-outline-secondary" disabled>Em breve</button>
+                <p class="text-muted">Registro de empréstimos, devoluções e acompanhamento de atrasos.</p>
+                <a class="btn btn-outline-primary" asp-controller="Emprestimos" asp-action="Create">Novo empréstimo</a>
             </div>
         </div>
     </div>
+</div>
+
+<div class="mt-4">
+    <a class="btn btn-outline-primary" asp-controller="Livros" asp-action="Disponiveis">Consultar livros disponíveis</a>
+    <a class="btn btn-outline-primary" asp-controller="Emprestimos" asp-action="Historico">Histórico por usuário</a>
+    <a class="btn btn-outline-primary" asp-controller="Relatorios" asp-action="Index">Relatórios</a>
 </div>

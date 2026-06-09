@@ -1,0 +1,52 @@
+@model Biblioteca.Models.Emprestimo
+
+@{
+    ViewData["Title"] = "Registrar devolução";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-7">
+        <div class="card shadow-sm border-success">
+            <div class="card-body p-4">
+                <h1 class="h3 mb-3 text-success">Registrar devolução</h1>
+
+                @if (Model.DataDevolucao.HasValue)
+                {
+                    <div class="alert alert-info">Este empréstimo já foi devolvido em @Model.DataDevolucao.Value.ToString("dd/MM/yyyy").</div>
+                }
+                else
+                {
+                    <p>Confirma a devolução deste livro?</p>
+                }
+
+                <dl class="row">
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Usuario)</dt>
+                    <dd class="col-sm-8">@Model.Usuario?.NomeCompleto</dd>
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Livro)</dt>
+                    <dd class="col-sm-8">@Model.Livro?.Titulo</dd>
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.DataEmprestimo)</dt>
+                    <dd class="col-sm-8">@Model.DataEmprestimo.ToString("dd/MM/yyyy")</dd>
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.DataPrevistaDevolucao)</dt>
+                    <dd class="col-sm-8">@Model.DataPrevistaDevolucao.ToString("dd/MM/yyyy")</dd>
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.DiasAtraso)</dt>
+                    <dd class="col-sm-8">@Model.DiasAtraso</dd>
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Multa)</dt>
+                    <dd class="col-sm-8">@Model.MultaAtual.ToString("C")</dd>
+                </dl>
+
+                <form asp-action="Devolver" method="post" class="d-flex gap-2">
+                    <input type="hidden" asp-for="Id" />
+                    @if (Model.DataDevolucao.HasValue)
+                    {
+                        <button type="submit" class="btn btn-success" disabled>Confirmar devolução</button>
+                    }
+                    else
+                    {
+                        <button type="submit" class="btn btn-success">Confirmar devolução</button>
+                    }
+                    <a class="btn btn-outline-secondary" asp-action="Index">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

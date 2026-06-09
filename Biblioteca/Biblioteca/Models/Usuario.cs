@@ -37,6 +37,8 @@ public class Usuario
     [Display(Name = "Status")]
     public string Status => Ativo ? "Ativo" : "Inativo";
 
+    public ICollection<Emprestimo> Emprestimos { get; set; } = new List<Emprestimo>();
+
     public int Idade
     {
         get

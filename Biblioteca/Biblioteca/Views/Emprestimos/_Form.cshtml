@@ -1,0 +1,64 @@
+@model Biblioteca.Models.Emprestimo
+
+<form asp-action="@(Model.Id == 0 ? "Create" : "Edit")" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+    @if (Model.Id != 0)
+    {
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="UsuarioId" />
+        <input type="hidden" asp-for="LivroId" />
+    }
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label asp-for="UsuarioId" class="form-label"></label>
+            @if (Model.Id == 0)
+            {
+                <select asp-for="UsuarioId" asp-items="ViewBag.Usuarios" class="form-select">
+                    <option value="">Selecione</option>
+                </select>
+            }
+            else
+            {
+                <select asp-for="UsuarioId" asp-items="ViewBag.Usuarios" class="form-select" disabled>
+                    <option value="">Selecione</option>
+                </select>
+            }
+            <span asp-validation-for="UsuarioId" class="text-danger"></span>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="LivroId" class="form-label"></label>
+            @if (Model.Id == 0)
+            {
+                <select asp-for="LivroId" asp-items="ViewBag.Livros" class="form-select">
+                    <option value="">Selecione</option>
+                </select>
+            }
+            else
+            {
+                <select asp-for="LivroId" asp-items="ViewBag.Livros" class="form-select" disabled>
+                    <option value="">Selecione</option>
+                </select>
+            }
+            <span asp-validation-for="LivroId" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label asp-for="DataEmprestimo" class="form-label"></label>
+            <input asp-for="DataEmprestimo" class="form-control" />
+            <span asp-validation-for="DataEmprestimo" class="text-danger"></span>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label asp-for="DataPrevistaDevolucao" class="form-label"></label>
+            <input asp-for="DataPrevistaDevolucao" class="form-control" />
+            <span asp-validation-for="DataPrevistaDevolucao" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a class="btn btn-outline-secondary" asp-action="Index">Voltar</a>
+    </div>
+</form>

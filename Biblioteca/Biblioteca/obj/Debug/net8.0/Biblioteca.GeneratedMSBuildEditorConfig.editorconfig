@@ -18,12 +18,60 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Emprestimos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Emprestimos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Emprestimos/Devolver.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvRGV2b2x2ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Emprestimos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Emprestimos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Emprestimos/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvX0Zvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Livros/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Livros/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Livros/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Livros/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Livros/_Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL19Gb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Relatorios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVsYXRvcmlvcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Shared/Error.cshtml]

@@ -3,6 +3,7 @@ using System;
 using Biblioteca.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Biblioteca.Migrations
 {
     [DbContext(typeof(BibliotecaContext))]
-    partial class BibliotecaContextModelSnapshot : ModelSnapshot
+    [Migration("20260606120000_LivrosEmprestimos")]
+    partial class LivrosEmprestimos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,11 +49,6 @@ namespace Biblioteca.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("livro_id");
 
-                    b.Property<decimal>("Multa")
-                        .HasPrecision(10, 2)
-                        .HasColumnType("numeric(10,2)")
-                        .HasColumnName("multa");
-
                     b.Property<int>("UsuarioId")
                         .HasColumnType("integer")
                         .HasColumnName("usuario_id");
@@ -81,16 +79,6 @@ namespace Biblioteca.Migrations
                         .HasMaxLength(120)
                         .HasColumnType("character varying(120)")
                         .HasColumnName("autor");
-
-                    b.Property<string>("Categoria")
-                        .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("character varying(80)")
-                        .HasColumnName("categoria");
-
-                    b.Property<int>("FaixaEtariaPermitida")
-                        .HasColumnType("integer")
-                        .HasColumnName("faixa_etaria_permitida");
 
                     b.Property<string>("Isbn")
                         .HasMaxLength(20)

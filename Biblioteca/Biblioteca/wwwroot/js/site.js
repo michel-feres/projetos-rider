@@ -1,4 +1,22 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const temaSalvo = localStorage.getItem("biblioteca-tema") || "claro";
+document.documentElement.dataset.theme = temaSalvo;
 
-// Write your JavaScript code.
+document.addEventListener("DOMContentLoaded", () => {
+    const botaoTema = document.getElementById("themeToggle");
+    if (!botaoTema) {
+        return;
+    }
+
+    const atualizarTexto = () => {
+        botaoTema.textContent = document.documentElement.dataset.theme === "escuro" ? "Tema claro" : "Tema escuro";
+    };
+
+    botaoTema.addEventListener("click", () => {
+        const proximoTema = document.documentElement.dataset.theme === "escuro" ? "claro" : "escuro";
+        document.documentElement.dataset.theme = proximoTema;
+        localStorage.setItem("biblioteca-tema", proximoTema);
+        atualizarTexto();
+    });
+
+    atualizarTexto();
+});

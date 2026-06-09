@@ -1,4 +1,5 @@
 using Biblioteca.Data;
+using Biblioteca.Filters;
 using Biblioteca.Models;
 using Biblioteca.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -20,6 +21,7 @@ public class UsuariosController : Controller
         _context = context;
     }
 
+    [RequireLogin]
     public async Task<IActionResult> Index()
     {
         var usuarios = await _context.Usuarios
@@ -53,6 +55,7 @@ public class UsuariosController : Controller
         return RedirectToAction(nameof(Index));
     }
 
+    [RequireLogin]
     public async Task<IActionResult> Edit(int? id)
     {
         if (id is null)
@@ -66,11 +69,15 @@ public class UsuariosController : Controller
             return NotFound();
         }
 
+        ViewBag.PossuiEmprestimo = await _context.Emprestimos
+            .AnyAsync(emprestimo => emprestimo.UsuarioId == usuario.Id);
+
         return View(usuario);
     }
 
     [HttpPost]
     [ValidateAntiForgeryToken]
+    [RequireLogin]
     public async Task<IActionResult> Edit(int id, Usuario usuario)
     {
         if (id != usuario.Id)
@@ -105,6 +112,7 @@ public class UsuariosController : Controller
         return RedirectToAction(nameof(Index));
     }
 
+    [RequireLogin]
     public async Task<IActionResult> Delete(int? id)
     {
         if (id is null)
@@ -125,11 +133,21 @@ public class UsuariosController : Controller
 
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
+    [RequireLogin]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
         var usuario = await _context.Usuarios.FindAsync(id);
         if (usuario is not null)
         {
+            var possuiEmprestimo = await _context.Emprestimos
+                .AnyAsync(emprestimo => emprestimo.UsuarioId == usuario.Id);
+
+            if (possuiEmprestimo)
+            {
+                TempData["MensagemErro"] = "Não é possível excluir um usuário com empréstimos registrados.";
+                return RedirectToAction(nameof(Index));
+            }
+
             _context.Usuarios.Remove(usuario);
             await _context.SaveChangesAsync();
             TempData["MensagemSucesso"] = "Usuário excluído com sucesso.";

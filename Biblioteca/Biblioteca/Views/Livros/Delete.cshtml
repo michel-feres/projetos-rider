@@ -1,36 +1,36 @@
-@model Biblioteca.Models.Usuario
+@model Biblioteca.Models.Livro
 
 @{
-    ViewData["Title"] = "Excluir usuário";
-    var possuiEmprestimo = ViewBag.PossuiEmprestimo is true;
+    ViewData["Title"] = "Excluir livro";
+    var possuiEmprestimoAtivo = ViewBag.PossuiEmprestimoAtivo is true;
 }
 
 <div class="row justify-content-center">
     <div class="col-lg-7">
         <div class="card shadow-sm border-danger">
             <div class="card-body p-4">
-                <h1 class="h3 mb-3 text-danger">Excluir usuário</h1>
-                <p>Tem certeza que deseja excluir este usuário?</p>
+                <h1 class="h3 mb-3 text-danger">Excluir livro</h1>
+                <p>Tem certeza que deseja excluir este livro?</p>
 
-                @if (possuiEmprestimo)
+                @if (possuiEmprestimoAtivo)
                 {
                     <div class="alert alert-warning">
-                        Este usuário possui empréstimos registrados e não poderá ser excluído.
+                        Este livro possui empréstimo ativo e não poderá ser excluído até a devolução.
                     </div>
                 }
 
                 <dl class="row">
-                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.NomeCompleto)</dt>
-                    <dd class="col-sm-8">@Model.NomeCompleto</dd>
-                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Email)</dt>
-                    <dd class="col-sm-8">@Model.Email</dd>
-                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Status)</dt>
-                    <dd class="col-sm-8">@Model.Status</dd>
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Titulo)</dt>
+                    <dd class="col-sm-8">@Model.Titulo</dd>
+                    <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Autor)</dt>
+                    <dd class="col-sm-8">@Model.Autor</dd>
+                    <dt class="col-sm-4">Estoque</dt>
+                    <dd class="col-sm-8">@Model.QuantidadeDisponivel/@Model.QuantidadeTotal</dd>
                 </dl>
 
                 <form asp-action="Delete" method="post" class="d-flex gap-2">
                     <input type="hidden" asp-for="Id" />
-                    @if (possuiEmprestimo)
+                    @if (possuiEmprestimoAtivo)
                     {
                         <button type="submit" class="btn btn-danger" disabled>Confirmar exclusão</button>
                     }
