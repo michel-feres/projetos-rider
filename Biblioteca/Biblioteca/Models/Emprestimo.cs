@@ -34,7 +34,8 @@ public class Emprestimo
 
     public Usuario? Usuario { get; set; }
     public Livro? Livro { get; set; }
-
+    
+    //Função para verificar se o livro foi devolvido
     [Display(Name = "Status")]
     public string Status
     {

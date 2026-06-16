@@ -38,7 +38,7 @@ public class Usuario
     public string Status => Ativo ? "Ativo" : "Inativo";
 
     public ICollection<Emprestimo> Emprestimos { get; set; } = new List<Emprestimo>();
-
+    //Função para verificar a idade do usuário cadastrado e ver se ele pode pegar um livro +18
     public int Idade
     {
         get

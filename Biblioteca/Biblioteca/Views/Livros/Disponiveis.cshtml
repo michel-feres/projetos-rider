@@ -1,0 +1,74 @@
+@{
+    ViewData["Title"] = "Livros Disponíveis";
+}
+
+<div class="mb-4">
+    <h1>Livros Disponíveis</h1>
+    <p class="text-muted">
+        Consulte os livros atualmente disponíveis para empréstimo.
+    </p>
+</div>
+
+<form method="get" class="card shadow-sm mb-3">
+    <div class="card-body">
+        <div class="row g-3 align-items-end">
+
+            <div class="col-md-8">
+                <label class="form-label">Buscar Livro</label>
+                <input type="text"
+                       name="busca"
+                       class="form-control"
+                       placeholder="Digite o título ou autor" />
+            </div>
+
+            <div class="col-md-4">
+                <button type="submit"
+                        class="btn btn-primary w-100">
+                    Consultar Livro
+                </button>
+            </div>
+
+        </div>
+    </div>
+</form>
+
+<div class="card shadow-sm">
+    <div class="card-body table-responsive">
+
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Categoria</th>
+                <th>Ano</th>
+                <th>Disponíveis</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            @foreach (var livro in Model)
+            {
+                <tr>
+                    <td>@livro.Titulo</td>
+                    <td>@livro.Autor</td>
+                    <td>@livro.Categoria</td>
+                    <td>@livro.AnoPublicacao</td>
+                    <td>@livro.QuantidadeDisponivel</td>
+
+                    <td>
+                        <span class="badge @(livro.QuantidadeDisponivel > 0
+                                               ? "text-bg-success"
+                                               : "text-bg-danger")">
+                            @livro.Disponibilidade
+                        </span>
+                    </td>
+                </tr>
+            }
+            </tbody>
+
+        </table>
+
+    </div>
+</div>

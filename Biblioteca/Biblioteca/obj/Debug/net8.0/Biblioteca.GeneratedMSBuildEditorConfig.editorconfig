@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Emprestimos/Historico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvSGlzdG9yaWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Emprestimos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wcmVzdGltb3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Livros/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Livros/Disponiveis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGl2cm9zL0Rpc3Bvbml2ZWlzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/michel/Desktop/projetos-rider/Biblioteca/Biblioteca/Views/Livros/Edit.cshtml]

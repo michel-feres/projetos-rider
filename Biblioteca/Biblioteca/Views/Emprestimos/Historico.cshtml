@@ -1,0 +1,55 @@
+@{
+    ViewData["Title"] = "Histórico por Usuário";
+}
+
+<h1>Histórico por Usuário</h1>
+<form method="get" class="card shadow-sm mb-3">
+    <div class="card-body">
+        <div class="row g-3 align-items-end">
+
+            <div class="col-md-8">
+                <label class="form-label">Usuário</label>
+                <select name="usuarioId"
+                        asp-items="ViewBag.UsuariosFiltro"
+                        class="form-select">
+                    <option value="">Todos os usuários</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <button type="submit"
+                        class="btn btn-primary w-100">
+                    Consultar Histórico
+                </button>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Livro</th>
+                    <th>Empréstimo</th>
+                    <th>Prev. Devolução</th>
+                    <th>Devolução</th>
+                    <th>Status</th>
+                    <th>Multa</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Usuario?.NomeCompleto</td>
+                        <td>@item.Livro?.Titulo</td>
+                        <td>@item.DataEmprestimo</td>
+                        <td>@item.DataPrevistaDevolucao</td>
+                        <td>@(item.DataDevolucao?.ToString() ?? "-")</td>
+                        <td>@item.Status</td>
+                        <td>R$ @item.MultaAtual.ToString("N2")</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

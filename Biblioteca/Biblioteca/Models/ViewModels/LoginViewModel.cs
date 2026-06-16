@@ -2,9 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Biblioteca.Models.ViewModels;
 
-/// <summary>
-/// Dados necessários para o login simples por e-mail e senha.
-/// </summary>
+//Tela para login e funções para caso o email ou a senha estiver errado
 public class LoginViewModel
 {
     [Required(ErrorMessage = "O e-mail é obrigatório.")]
